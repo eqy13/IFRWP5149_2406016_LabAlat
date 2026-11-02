@@ -3,6 +3,5 @@ Nama            : Moch. Elqy Syaputra
 Nim             : 2406016
 Kelas           : Informatika A 
 Kakas           : draw.io
-Status Latihan  : Pertemuan 5 SKENARIO USE CASE: DARI DIAGRAM KE LANGKAH KEGIATAN
-
+Status Latihan  : Pertemuan 6 ACTIVITY DIAGRAM: DARI SKENARIO KE ALUR AKTIVITAS 
 ```
