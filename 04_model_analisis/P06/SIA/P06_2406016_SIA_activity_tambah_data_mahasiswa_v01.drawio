@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="C5bmBegkYAnaoTnwpZjO">
+        <mxGraphModel dx="12811" dy="6278" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="lane_sistem" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;" value="Sistem" vertex="1">
+                    <mxGeometry height="2100" width="920" x="436" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="error" parent="lane_sistem" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Menolak penyimpanan dan menampilkan pesan kesalahan serta meminta perbaikan data" vertex="1">
+                    <mxGeometry height="90" width="260" x="590" y="1120" as="geometry"/>
+                </mxCell>
+                <mxCell id="Gp_cFYcy58YV_Tr66ZPO-1" parent="lane_sistem" style="ellipse;html=1;shape=endState;fillColor=strokeColor;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="350" y="1390" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane_admin" parent="1" style="swimlane;startSize=20;whiteSpace=wrap;html=1;" value="Admin Akademik" vertex="1">
+                    <mxGeometry height="2100" width="720" x="1356" y="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="select_add" parent="lane_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Memilih tindakan Tambah Data Mahasiswa" vertex="1">
+                    <mxGeometry height="70" width="260" x="230" y="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="start" parent="lane_admin" style="ellipse;html=1;aspect=fixed;fillColor=#000000;strokeColor=#000000;" value="" vertex="1">
+                    <mxGeometry height="30" width="30" x="345" y="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="input_data" parent="lane_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Mengisi formulir dengan data mahasiswa baru dan mengirimkan data" vertex="1">
+                    <mxGeometry height="90" width="260" x="230" y="460" as="geometry"/>
+                </mxCell>
+                <mxCell id="mX_1cdJwIXJm_fjiGJ9Z-1" edge="1" parent="lane_admin" source="fix_data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="input_data">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="600" y="1595"/>
+                            <mxPoint x="600" y="505"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="fix_data" parent="lane_admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Memperbaiki data mahasiswa yang tidak lengkap atau tidak valid" vertex="1">
+                    <mxGeometry height="90" width="260" x="220" y="1550" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="lane_admin" source="start" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="select_add">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="show_form" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Menampilkan formulir penambahan data mahasiswa" vertex="1">
+                    <mxGeometry height="80" width="260" x="671" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="validate" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Memvalidasi data mahasiswa yang dimasukkan" vertex="1">
+                    <mxGeometry height="80" width="260" x="671" y="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Data lengkap dan valid?" vertex="1">
+                    <mxGeometry height="110" width="130" x="736" y="850" as="geometry"/>
+                </mxCell>
+                <mxCell id="save_data" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Menyimpan data mahasiswa baru" vertex="1">
+                    <mxGeometry height="70" width="260" x="671" y="1080" as="geometry"/>
+                </mxCell>
+                <mxCell id="confirmation" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#000000;" value="Menampilkan konfirmasi bahwa data mahasiswa berhasil disimpan" vertex="1">
+                    <mxGeometry height="80" width="260" x="671" y="1240" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="select_add" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="show_form">
+                    <mxGeometry relative="1" x="-0.5518" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="show_form" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="input_data">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="input_data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="validate">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="validate" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="decision">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_true" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontColor=#38761D;labelBackgroundColor=#D5E8D4;" target="save_data" value="[true]">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_save_confirmation" edge="1" parent="1" source="save_data" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="confirmation">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e_false" edge="1" parent="1" source="decision" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;fontColor=#CC0000;labelBackgroundColor=#F8CECC;" target="error" value="[false]">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="966" y="905"/>
+                            <mxPoint x="966" y="1040"/>
+                            <mxPoint x="1156" y="1040"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_fix" edge="1" parent="1" source="error" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;" target="fix_data">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="1156" y="1470"/>
+                            <mxPoint x="1716" y="1470"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="e_final" edge="1" parent="1" source="confirmation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="801" y="1430" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
